@@ -20,4 +20,11 @@ gem "sqlite3", "~> 1.4"
 # https://github.com/jarmo/require_all
 gem "require_all"
 
-gem "pry"
+# These gems will only be used when we are running the application locally
+group :development do
+  # Used to generate seed data
+  # https://github.com/faker-ruby/faker
+  gem "faker", "~> 2.18"
+  
+  gem "pry"
+end
